@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/case_study/prototype/style.css" />
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Furama</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top py-0"
+      style="background-color: rgb(45, 111, 99)"
+    >
+      <div class="container-fluid" style="padding-left: 4%">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="height: 50px">
+              <a
+                class="nav-link active furama py-0 d-flex justify-content-center align-items-center px-3"
+                aria-current="page"
+                href="#"
+                >Furama</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
+                href="/case_study/case_study/prototype/facility.html"
+                >Facilities</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
+                href="#"
+                >Cuisines</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
+                href="#"
+              >
+                Entertainment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
+                href="#"
+                >Offer</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle furama py-0 d-flex justify-content-center align-items-center px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manager
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Employee</a></li>
+                <li><a class="dropdown-item" href="#">Customer</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!-- <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            /> -->
+            <!-- <button class="btn btn-outline-success" type="submit">
+              Search
+            </button> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- container -->
+    <!-- banner -->
+    <div class="slider position-relative">
+      <div class="slide active position-relative">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2019/07/Vietnam_Danang_Furama_Resort_Exterior_Ocean-Pool-6.jpg"
+          alt="Slide 1"
+        />
+        <div class="position-absolute banner-title">
+          A CULINARY RESORT ON ONE OF THE SIX MOST LUXURIOUS BEACHES IN THE
+          WORLD
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior-Furama-girl-with-pink-hat.jpg"
+          alt="Slide 2"
+        />
+        <div class="position-absolute banner-title">
+          A CULINARY RESORT ON ONE OF THE SIX MOST LUXURIOUS BEACHES IN THE
+          WORLD
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior_Courtyard.jpg"
+          alt="Slide 3"
+        />
+        <div class="position-absolute banner-title">
+          A CULINARY RESORT ON ONE OF THE SIX MOST LUXURIOUS BEACHES IN THE
+          WORLD
+        </div>
+      </div>
+      <div class="prev-btn">&#10094;</div>
+      <div class="next-btn">&#10095;</div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="booking position-relative d-flex">
+        <div
+          class="d-flex align-items-center mx-2 ms-4"
+          style="height: 100%; width: 18%"
+        >
+          <input
+            class="ps-2"
+            style="height: 65%; border-radius: 10px; width: 100%; border: none; color: black;"
+            type="date"
+          />
+        </div>
+        <div
+          class="d-flex align-items-center mx-2"
+          style="height: 100%; width: 18%";
+        >
+          <input
+            class="ps-2"
+            style="height: 65%; border-radius: 10px; width: 100%; border: none;color: black;"
+            type="date";
+          />
+        </div>
+        <div
+          class="d-flex align-items-center mx-2"
+          style="height: 100%; width: 18%"
+        >
+          <input
+            class="ps-2"
+            style="height: 65%; border-radius: 10px; width: 100%; border: none; color: black;"
+            type="text"
+            placeholder="Promo code"
+          />
+        </div>
+        <div
+          class="d-flex align-items-center mx-2"
+          style="height: 100%; width: 18%; font-family: sans-serif"
+        >
+          <input
+            class="d-flex align-items-center justify-content-center"
+            style="
+              height: 65%;
+              border-radius: 10px;
+              width: 100%;
+              font-size: 15px;
+              border: none;
+              background-color: rgb(176, 220, 211);
+              color: black;
+            "
+            type="submit"
+            value="CHECK AVAILABILITY"
+          />
+        </div>
+        <div
+          class="d-flex align-items-center mx-2"
+          style="height: 100%; width: 18%; font-family: sans-serif"
+        >
+          <input
+            class="d-flex align-items-center justify-content-center"
+            style="
+              height: 65%;
+              border-radius: 10px;
+              width: 100%;
+              font-size: 15px;
+              background-color: rgb(45, 111, 99);
+              border: none;
+              color: white;
+            "
+            type="submit"
+            value="MODIFY & CANCEL"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row mx-0 mt-4" style="height: 400px">
+      <div class="col-4 mt-4 ps-5">
+        <h2
+          style="
+            color: #cbbe73;
+            font-family: Playfair Display;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            font-style: normal;
+          "
+        >
+          THIS WORLD CLASS RESORT, FURAMA DANANG, REPUTABLE FOR BEING A CULINARY
+          RESORT IN VIETNAM
+        </h2>
+      </div>
+      <div class="col-4">
+        <a target="_blank" href="https://www.youtube.com/watch?v=IjlT_4mvd-c">
+          <img
+            width="100%"
+            src="https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior_Beach.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-4 mt-4">
+        <div>
+          <p
+            style="
+              font-size: 18px;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+            "
+          >
+            Overlooking the long stretch of wide white sand on Danang Beach,
+            Furama Resort Danang is a gateway to three World Heritage Sites of
+            Hoi An (20 minutes), My Son (90 minutes) and Hue (2 hours). The 198
+            rooms and suites plus 70 two to four bedroom pool villas feature
+            tasteful décor, designed with traditional Vietnamese style and a
+            touch of French colonial architecture and guarantee the Vietnam’s
+            the most prestigious resort -counting royalty, presidents, movie
+            stars and international business leaders among its celebrity guests.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="row mx-0"
+      style="height: 100px; background-color: rgb(243, 242, 242)"
+    >
+      <div class="col-12 d-flex justify-content-center align-items-end pb-2">
+        <h2 style="color: #cbbe73; font-size: 27px">OFFERS & DEAL</h2>
+      </div>
+    </div>
+
+    <div class="row mx-0 pt-5" style="height: 250px">
+      <div class="col-12" style="width: 100%; height: 100%">
+        <h2
+          class="d-flex justify-content-center"
+          style="color: #cbbe73; font-size: 27px"
+        >
+          JOINING OUR CULINARY & RECREATIONAL EXPERIENCE
+        </h2>
+        <div class="d-flex justify-content-center">
+          <p class="text-center" style="max-width: 400px">
+            The Furama Resort aims to make your stay in Vietnam a unique and
+            unforgettable experience. Whether you prefer to be active or just to
+            relax, we offer a wide range of activities and services to suit your
+            needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <div class="row mx-0" style="height: 500px;">
+        <div class="col-6">
+          <img src="https://furamavietnam.com/wp-content/uploads/2018/07/CULIRARY.jpg" alt="">
+        </div>
+        <div class="col-6">
+          <h2 style="font-size: 27px; color: #cbbe73;font-weight: bold; font-family: sans-serif; padding-top: 18%;">CULINARY</h2>
+          <p class="mt-4">
+            The resort’s culinary experience features a mixture of the authentic and locally inspired Vietnamese, Asian, Italian and other European cuisines plus the best imported steaks. The resort presents guests with varied gastronomic venues – the hip and breezy bar overlooking the beach, the exclusive Lagoon pool surrounded by a tropical garden, the true Italian flare offered at the Don Cipriani’s, the refined Asian touch at Café Indochine or the authentic central Vietnam cuisine at the Danaksara.
+          </p>
+          <button type="button" style="background-color: rgb(45, 111, 99); color: white;" class="btn mt-4">READ MORE</button>
+        </div>
+      </div>
+  
+      <div class="row mx-0" style="height: 500px;">
+        <div class="col-6">
+          <h2 style="font-size: 27px; color: #cbbe73;font-weight: bold; font-family: sans-serif; padding-top: 18%;">MEETING & EVENT</h2>
+          <p class="mt-4">
+            A well-appointed International Convention Palace with ballrooms can accommodate up to 1,000 people in style, with another ten function rooms for 50 to 300 people each. A variety of cultural-themed parties on the beach or around the lagoon, in the ballrooms or outside the resort, with the surprising arrivals of VIPs from Helicopter landing on the resort’s own Helipad…</p>
+          <button type="button" style="background-color: rgb(45, 111, 99); color: white;" class="btn mt-4">READ MORE</button>
+        </div>
+        <div class="col-6">
+          <img src="https://furamavietnam.com/wp-content/uploads/2018/10/02.-ICP-ICP_Furama_Danang_-Ball-Room-4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row mx-0" style="height: 500px;">
+        <div class="col-6">
+          <img src="https://furamavietnam.com/wp-content/uploads/2018/07/RECREATION.jpg" alt="">
+        </div>
+        <div class="col-6">
+          <h2 style="font-size: 27px; color: #cbbe73;font-weight: bold; font-family: sans-serif; padding-top: 18%;">RECREATION</h2>
+          <p class="mt-4">
+            A full range of Water Sports will keep you busy. Stop by the Water Sport House where our experienced staff are waiting to assist or train you in the use of any of our equipment.
+          </p>
+          <button type="button" style="background-color: rgb(45, 111, 99); color: white;" class="btn mt-4">READ MORE</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="relative pt-8 pb-6" style="background-color: #addccf;">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-left lg:text-left">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl fonat-semibold text-blueGray-700">How to Get to Us</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> ReactJS by
+              <a href="https://www.facebook.com/truongdepzai.07/" class="text-blueGray-500 hover:text-blueGray-800">Duong Minh Truong</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy danh sách các slide và nút bấm
+        var slides = document.querySelectorAll(".slide");
+        var prevBtn = document.querySelector(".prev-btn");
+        var nextBtn = document.querySelector(".next-btn");
+        var dots = document.querySelectorAll(".dot");
+        var currentIndex = 0;
+
+        // Thêm sự kiện click cho nút prev
+        prevBtn.addEventListener("click", function () {
+          // Ẩn slide hiện tại
+          slides[currentIndex].classList.remove("active");
+          // Giảm chỉ số slide hiện tại, nếu đã đến slide đầu tiên thì quay lại slide cuối cùng
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          // Hiển thị slide mới
+          slides[currentIndex].classList.add("active");
+          // Thay đổi active dot tương ứng
+          updateDots();
+        });
+
+        // Thêm sự kiện click cho nút next
+        nextBtn.addEventListener("click", function () {
+          // Ẩn slide hiện tại
+          slides[currentIndex].classList.remove("active");
+          // Tăng chỉ số slide hiện tại, nếu đã đến slide cuối cùng thì quay lại slide đầu tiên
+          currentIndex = (currentIndex + 1) % slides.length;
+          // Hiển thị slide mới
+          slides[currentIndex].classList.add("active");
+          // Thay đổi active dot tương ứng
+          updateDots();
+        });
+
+        // Thêm sự kiện click cho các dot
+        dots.forEach(function (dot, index) {
+          dot.addEventListener("click", function () {
+            // Ẩn slide hiện tại
+            slides[currentIndex].classList.remove("active");
+            // Đặt chỉ số slide hiện tại tương ứng với dot click
+            currentIndex = index;
+            // Hiển thị slide mới
+            slides[currentIndex].classList.add("active");
+            // Thay đổi active dot tương ứng
+            updateDots;
+          });
+        });
+
+        // Hàm thay đổi active dot tương ứng với slide hiện tại
+        function updateDots() {
+          dots.forEach(function (dot, index) {
+            dot.classList.remove("active");
+            if (index === currentIndex) {
+              dot.classList.add("active");
+            }
+          });
+        }
+
+        // Tự động chuyển slide sau 5 giây
+        setInterval(function () {
+          // Ẩn slide hiện tại
+          slides[currentIndex].classList.remove("active");
+          // Tăng chỉ số slide hiện tại, nếu đã đến slide cuối cùng thì quay lại slide đầu tiên
+          currentIndex = (currentIndex + 1) % slides.length;
+          // Hiển thị slide mới
+          slides[currentIndex].classList.add("active");
+          // Thay đổi active dot tương ứng
+          updateDots();
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

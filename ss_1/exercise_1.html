@@ -16,8 +16,8 @@
     </div>
     <script>
         function submitForm(){
-            let textName = document.getElementById("name").value;
-            if (textName === ""){
+            const textName = document.getElementById("name").value;
+            if (!textName){
                 alert("One for you, one for me");
             } else alert("One for "+ textName +", one for me");
         }
