@@ -1,27 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as blog_service from "../service/blog_service";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import slugify from "slugify";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-function Create() {
+function Edit() {
   let day = new Date();
   let dayAt = day.getDate();
   let monthAt = day.getMonth() + 1;
   let yearAt = day.getFullYear();
   let dateAt = dayAt + "-" + monthAt + "-" + yearAt;
+  const param = useParams();
+  const [post, setPost] = useState();
+  useEffect(() => {
+    const fetchApi = async () => {
+      const result = await blog_service.findById(param.id);
+      setPost(result);
+    };
+    fetchApi();
+  }, []);
+  if (!post) return null;
   return (
     <>
-      <h1>Create Post</h1>
+      <h1>Edit Post</h1>
       <Link className="btn btn-primary my-3" to={"/"}>
         Back to the list
       </Link>
       <Formik
         initialValues={{
-          title: "",
-          category: "",
-          content: "",
+          title: post?.title,
+          category: post?.category,
+          content: post?.content,
           updatedAt: dateAt,
         }}
         validationSchema={Yup.object({
@@ -31,10 +41,10 @@ function Create() {
         })}
         onSubmit={(values) => {
           const slug = slugify(values.title, { lower: true, strict: true });
-          const createPost = async () => {
-            await blog_service.save({ ...values, slug });
+          const editPost = async () => {
+            await blog_service.editPost(post?.id, { ...values, slug });
           };
-          createPost();
+          editPost();
         }}
       >
         <Form>
@@ -61,7 +71,11 @@ function Create() {
               name="category"
               id="category"
             />
-            <ErrorMessage name="category" component="span" className="form-err" />
+            <ErrorMessage
+              name="category"
+              component="span"
+              className="form-err"
+            />
           </div>
 
           <div className="input-group mb-3">
@@ -74,7 +88,11 @@ function Create() {
               name="content"
               id="content"
             />
-            <ErrorMessage name="content" component="span" className="form-err" />
+            <ErrorMessage
+              name="content"
+              component="span"
+              className="form-err"
+            />
           </div>
           <button class="btn btn-outline-secondary" type="submit">
             Submit
@@ -85,4 +103,4 @@ function Create() {
   );
 }
 
-export default Create;
+export default Edit;
