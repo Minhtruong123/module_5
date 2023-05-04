@@ -9,7 +9,7 @@ function Hook() {
   }
   const handleLastName = (lastNameHandle) => {
     setLastName(lastNameHandle)
-  }
+  } 
 
   return (
     <div>
