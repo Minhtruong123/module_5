@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import * as blog_service from "../service/blog_service";
+import * as blogService from "../service/blog_service";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import slugify from "slugify";
 import * as Yup from "yup";
@@ -15,7 +15,7 @@ function Edit() {
   const [post, setPost] = useState();
   useEffect(() => {
     const fetchApi = async () => {
-      const result = await blog_service.findById(param.id);
+      const result = await blogService.findById(param.id);
       setPost(result);
     };
     fetchApi();
@@ -42,7 +42,7 @@ function Edit() {
         onSubmit={(values) => {
           const slug = slugify(values.title, { lower: true, strict: true });
           const editPost = async () => {
-            await blog_service.editPost(post?.id, { ...values, slug });
+            await blogService.editPost(post?.id, { ...values, slug });
           };
           editPost();
         }}

@@ -1,5 +1,5 @@
 import React from "react";
-import * as blog_service from "../service/blog_service";
+import * as blogService from "../service/blog_service";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import slugify from "slugify";
 import * as Yup from "yup";
@@ -32,7 +32,7 @@ function Create() {
         onSubmit={(values) => {
           const slug = slugify(values.title, { lower: true, strict: true });
           const createPost = async () => {
-            await blog_service.save({ ...values, slug });
+            await blogService.save({ ...values, slug });
           };
           createPost();
         }}

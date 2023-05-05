@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import * as blog_service from "../service/blog_service";
+import * as blogService from "../service/blog_service";
 import { Link } from "react-router-dom";
 
 function List() {
@@ -7,19 +7,19 @@ function List() {
   const [post, setPost] = useState();
   useEffect(() => {
     const fetchApi = async () => {
-      const result = await blog_service.findAll();
+      const result = await blogService.findAll();
       setListPost(result);
     };
     fetchApi();
   }, []);
   const handleDeletePost = async (id) => {
-    const result2 = await blog_service.findById(id);
+    const result2 = await blogService.findById(id);
     setPost(result2);
   };
 
   const handleDelete = async () => {
-    await blog_service.deletePost(post.id);
-    const result3 = await blog_service.findAll();
+    await blogService.deletePost(post.id);
+    const result3 = await blogService.findAll();
     setListPost(result3);
   };
 
