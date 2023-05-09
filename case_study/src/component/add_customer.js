@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import * as Yup from "yup";
 import { ErrorMessage, Field, Formik, Form } from "formik";
 import { Link } from "react-router-dom";
-import * as customerService from "../service/customerService";
+import * as customerService from "../service/customer_service";
 
 function CreateCustomer() {
   const [customerTypeList, setCustomerTypeList] = useState();
-  // const [date, setDate] = useState();
-
   useEffect(() => {
     const fetchApi = async () => {
       const result = await customerService.findAllTypeCustomer();

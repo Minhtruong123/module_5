@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import * as customerService from "../service/customerService";
+import * as customerService from "../service/customer_service";
 const Customer = () => {
   const [customerList, setCustomerList] = useState([]);
   const [customerTypeList, setCustomerTypeList] = useState([]);

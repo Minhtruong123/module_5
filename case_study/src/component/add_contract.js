@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import * as customerService from "../service/customerService";
-import * as facilityService from "../service/facilityService";
+import * as customerService from "../service/customer_service";
+import * as facilityService from "../service/facility_service";
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import * as Yup from "yup";
-import * as contractService from "../service/contractService"
+import * as contractService from "../service/contract_service"
 
 function Contract() {
   const [customerList, setCustomerList] = useState();

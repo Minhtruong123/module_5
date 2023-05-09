@@ -149,9 +149,9 @@ function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" href="#">
                       Employee
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to={"/customer"}>

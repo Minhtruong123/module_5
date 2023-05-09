@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import * as facilityService from "../service/facilityService";
-import * as customerService from "../service/customerService";
-import * as contractList from "../service/contractService";
+import * as facilityService from "../service/facility_service";
+import * as customerService from "../service/customer_service";
+import * as contractList from "../service/contract_service";
 import { Link } from "react-router-dom";
 function ContractList() {
   const [facilityList, setFacilityList] = useState([]);

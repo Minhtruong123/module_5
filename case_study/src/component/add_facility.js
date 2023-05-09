@@ -2,7 +2,7 @@ import { Component, useEffect } from "react";
 import { useState } from "react";
 import * as Yup from "yup";
 import { ErrorMessage, Field, Formik, Form } from "formik";
-import * as facilityService from "../service/facilityService";
+import * as facilityService from "../service/facility_service";
 import { Link } from "react-router-dom";
 
 function AddFacility() {
@@ -52,22 +52,22 @@ function AddFacility() {
               description: "",
               freeService: "",
             }}
-            validationSchema={Yup.object({
-              nameFacility: Yup.string()
-                .required("Required.")
-                .matches(/^[a-zA-Z ]*$/, "Must not contain numbers"),
-              roomSize: Yup.string().required("Required."),
-              img: Yup.string().required("Required."),
-              price: Yup.string().required("Required."),
-              roomStandard: Yup.string().required("Required."),
-              floor: Yup.string()
-                // .required("Required.")
-                .matches(/^[1-9]\d*$/, "Must be a positive integer."),
-              poolArea: Yup.string()
-                // .required("Required.")
-                .matches(/^[1-9]\d*$/, "Must be a positive integer."),
-              description: Yup.string().required("Required."),
-            })}
+            // validationSchema={Yup.object({
+            //   nameFacility: Yup.string()
+            //     .required("Required.")
+            //     .matches(/^[a-zA-Z ]*$/, "Must not contain numbers"),
+            //   roomSize: Yup.string().required("Required."),
+            //   img: Yup.string().required("Required."),
+            //   price: Yup.string().required("Required."),
+            //   roomStandard: Yup.string().required("Required."),
+            //   floor: Yup.string()
+            //     .required("Required.")
+            //     .matches(/^[1-9]\d*$/, "Must be a positive integer."),
+            //   poolArea: Yup.string()
+            //     .required("Required.")
+            //     .matches(/^[1-9]\d*$/, "Must be a positive integer."),
+            //   description: Yup.string().required("Required."),
+            // })}
             onSubmit={(values, {}) => {
               const createFacility = async () => {
                 values.typeRoom = type;

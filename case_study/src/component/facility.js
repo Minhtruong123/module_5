@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as facilityService from "../service/facilityService";
+import * as facilityService from "../service/facility_service";
 import { Link } from "react-router-dom";
 
 function Facilities() {
@@ -153,7 +153,7 @@ function Facilities() {
           </div>
 
           <div className="col-2 px-0">
-            <Link to="/createFacility">
+            <Link to="/addFacility">
               <button
                 style={{
                   width: "100%",

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "react-datepicker/dist/react-datepicker.css";
 import * as Yup from "yup";
 import { ErrorMessage, Field, Formik, Form } from "formik";
-import * as customerService from "../service/customerService";
+import * as customerService from "../service/customer_service";
 import { useParams } from "react-router-dom";
 
 function EditCustomer() {

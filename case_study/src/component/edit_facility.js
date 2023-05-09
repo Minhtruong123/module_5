@@ -2,7 +2,7 @@ import { Component, useEffect } from "react";
 import { useState } from "react";
 import * as Yup from "yup";
 import { ErrorMessage, Field, Formik, Form } from "formik";
-import * as facilityService from "../service/facilityService";
+import * as facilityService from "../service/facility_service";
 import { useParams } from "react-router-dom";
 
 function EditFacility() {
