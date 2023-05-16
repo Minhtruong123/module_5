@@ -44,7 +44,7 @@ export const editCustomer = async (id,customer) => {
         console.log(e);
     }
 }
-
+    
 export const findAllTypeCustomer = async () => {
     try{
         const result = await axios.get('http://localhost:8080/typeCustomer');

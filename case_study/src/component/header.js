@@ -163,6 +163,14 @@ function Header() {
             </ul>
             <form className="d-flex" role="search">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <form className="d-flex clearfix block-sm" role="search">
+                  <input
+                    className="form-control me-2 rounded-pill search"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </form>
                 <li className="nav-item">
                   <Link
                     className="nav-link furama py-0 d-flex justify-content-center align-items-center px-3"
