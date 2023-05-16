@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "productId": "PO-1",
+      "nameProduct": "tee-1",
+      "dateIn": "2023-05-27",
+      "quantity": "6",
+      "typeId": 1,
+      "id": 1
+    },
+    {
+      "productId": "1234",
+      "nameProduct": "pant-1",
+      "dateIn": "2023-05-24",
+      "quantity": "8",
+      "typeId": "1",
+      "id": 2
+    },
+    {
+      "productId": "PO-3",
+      "nameProduct": "tee-1",
+      "dateIn": "2023-05-21",
+      "quantity": "5",
+      "typeId": 1,
+      "id": 3
+    },
+    {
+      "productId": "PO-5",
+      "nameProduct": "Pant-2",
+      "dateIn": "2023-05-26",
+      "quantity": "20",
+      "typeId": "2",
+      "id": 4
+    }
+  ],
+  "typeProduct": [
+    {
+      "id": 1,
+      "name": "tee"
+    },
+    {
+      "id": 2,
+      "name": "pant"
+    }
+  ]
+}
